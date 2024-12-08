@@ -1,0 +1,298 @@
+.sectionSevenTop {
+  margin-bottom: 35px;
+}
+
+.sectionSevenTitle {
+  font-size: 64px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.sectionSevenInfo {
+  max-width: 64%;
+  color: #5c5c77;
+}
+
+.sectionSeven {
+  margin-bottom: 100px;
+}
+
+.sectionSevenBtm {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.sectionSevenBtmLeft {
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 100%;
+  padding: 35px;
+}
+
+.credintails {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.inpt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.inpt input,
+.idea {
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #c6c6c6;
+  background: transparent;
+}
+
+.fullName,
+.phoneNumber,
+.email {
+  padding: 12px;
+}
+
+.idea {
+  width: 100%;
+  padding: 15px;
+  margin: 2px 0px 5px 0;
+}
+
+.submitBtn {
+  color: #fff;
+  padding: 10px 35px;
+  margin-top: 24px;
+}
+
+.sectionSevenBtmRight {
+  border: 1px solid #333;
+  padding: 16px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.sectionSevenBtmRightTop {
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.small {
+  position: absolute;
+}
+
+.img1 {
+  left: 0px;
+}
+
+.img2 {
+  left: 16px;
+}
+
+.img3 {
+  left: 32px;
+}
+
+.kBtn {
+  position: absolute;
+  border-style: none;
+  color: #fff;
+  background-color: #5c2c5d;
+  padding: 8px 28px;
+  border-radius: 24px;
+  left: 54px;
+  top: 2px;
+  z-index: 5;
+}
+
+.followersPara {
+  font-size: 20px;
+  margin-bottom: 84px;
+  text-align: left;
+}
+
+.getInTouchtwo {
+  position: relative;
+}
+
+.connectToWhtspBtn {
+  width: 100%;
+  background-color: #34c065;
+  color: #fff;
+  border-style: none;
+  padding: 16px 34px 16px 18px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.7s;
+}
+
+.whatsappIconTwo {
+  position: absolute;
+  width: 22px;
+  top: 0px;
+  right: 22px;
+}
+
+.connectToWhtspBtn:hover {
+  background-color: #5ce08a;
+}
+
+.connectToWhtspBtn:active {
+  background-color: #34c065;
+}
+
+.clientsCon {
+  background-color: #071920;
+  border-radius: 15px;
+  color: #fff;
+  padding: 25px 15px;
+  margin-top: 35px;
+}
+
+.clientTitle {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: rgb(186, 46, 46);
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.show {
+  display: none;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1350px) {
+  .sectionSevenBtmLeft {
+    width: 92%;
+  }
+
+  .sectionSevenBtmRight {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .sectionSevenBtm {
+    flex-direction: column;
+  }
+
+  .sectionSevenBtmLeft {
+    width: 100%;
+  }
+
+  .sectionSevenInfo {
+    max-width: 100%;
+  }
+
+  .sectionSevenFollowers {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+  }
+
+  .followersPara {
+    margin-bottom: 35px;
+  }
+
+  .clientsCon {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 730px) {
+  .sectionSeven {
+    margin-bottom: 35px;
+  }
+
+  .credintails {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .textareaCon {
+    text-align: left;
+  }
+  .sectionSevenInfo {
+    max-width: 100%;
+    padding: 0 35px;
+  }
+
+  .sectionSevenFollowers {
+    flex-direction: column;
+  }
+
+  .sectionSevenBtmRight {
+    padding: 16px;
+    width: 100%;
+  }
+  .followersPara {
+    text-align: left;
+  }
+
+  .connectToWhtspBtn {
+    width: 70%;
+  }
+
+  .clientsCon {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sectionSevenTitle {
+    font-size: 40px;
+  }
+  .sectionSevenInfo {
+    padding: 0 6px;
+  }
+
+  .sectionSevenBtmRight {
+    padding-bottom: 14px;
+  }
+  .followersPara {
+    max-width: 70%;
+  }
+  .connectToWhtspBtn {
+    width: 100%;
+    padding: 16px 18px 16px 0;
+  }
+
+  .whatsappIconTwo {
+    right: 34px;
+    margin-left: 0;
+    right: 32px;
+    top: -2px;
+  }
+
+  .clientsCon {
+    text-align: left;
+  }
+
+  .show {
+    display: block;
+    margin-bottom: 34px;
+  }
+
+  .hide {
+    display: none;
+  }
+}

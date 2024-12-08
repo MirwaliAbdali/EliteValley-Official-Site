@@ -1,0 +1,100 @@
+.firstContainer {
+    margin-top: 150px;
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.headerTitle {
+    font-size: 64px;
+    line-height: 86px;
+    letter-spacing: -0.02em;
+}
+
+.headerSpan {
+    color: #ff6838;
+    font-family: monospace;
+    font-style: italic;
+}
+
+/* HEADER_BIG IMAGE */
+.headerBigImgCon {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.empowering {
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 48px;
+}
+
+.union {
+    width: 100%;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 1760px) {
+    .headerInfoImg img {
+        width: 340px;
+        height: 265px;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    .headerTitle {
+        font-size: 76px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    /* Header Part Responsiveness */
+    .empowering {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .headerTitle {
+        font-size: 48px;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .headerTitle {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    /* HEADER  */
+    .headerInfoImg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .firstContainer {
+        margin-top: 110px;
+    }
+    .headerTitle {
+        font-size: 24px;
+    }
+    .navbar {
+        margin-bottom: 18px;
+    }
+
+    .headerTitle {
+        line-height: 1.4;
+    }
+
+    .headerBigImgCon {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,135 @@
+.general {
+    margin-bottom: 100px;
+}
+
+.projectTop {
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.projectTitle {
+    font-size: 90px;
+    font-weight: 300;
+}
+
+.projectInfo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: right;
+    max-width: 34%;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    color: #5c5c77;
+}
+
+.projectBtm {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    gap: 35px;
+}
+
+.projectBtmTwo,
+.projectBtmFour {
+    align-self: flex-end;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 1700px) {
+    .projectImgs img {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .projectBtm {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .projectTitle {
+        font-size: 68px;
+    }
+
+    .projectInfo {
+        top: 110px;
+    }
+
+    .projectBtm {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .projectTitle {
+        font-size: 52px;
+    }
+
+    .projectInfo {
+        top: 80px;
+        max-width: 44%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .projectTitle {
+        font-size: 38px;
+    }
+
+    .projectInfo {
+        top: 52px;
+        right: 0;
+        max-width: 64%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .projectTitle,
+    .projectInfo {
+        text-align: center;
+    }
+
+    .projectTitle {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    .projectInfo {
+        position: static;
+        max-width: 100%;
+    }
+
+    .projectBtm {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .projectBtmTwo,
+    .projectBtmFour {
+        align-self: center;
+    }
+
+    .projectBtmTwo,
+    .projectBtmThree {
+        display: none;
+    }
+
+    .projectBtmOne img,
+    .projectBtmFour img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .projectTitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

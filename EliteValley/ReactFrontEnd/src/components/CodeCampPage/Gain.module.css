@@ -1,0 +1,160 @@
+.general {
+  margin-bottom: 100px;
+}
+
+.gainSection {
+  padding: 20px;
+}
+
+.gainContainer {
+  display: flex;
+  align-items: center;
+}
+
+.gainLeftCon {
+  max-width: 60%;
+}
+
+.gainPara {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+
+.gainPara::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1.5px;
+  background: #071920;
+  margin: 0 10px 3px 0;
+}
+
+.gainTitle {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: -0.02em;
+  margin-top: 24px;
+  max-width: 60%;
+  margin-bottom: 35px;
+}
+
+.gainProfile {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  border-radius: 130px;
+  padding: 14px 22px;
+  max-width: 70%;
+}
+
+.gainProfileOne {
+  background: #ff6d66;
+}
+
+.gainProfileTwo {
+  background: #ffe8e1;
+}
+
+.gainProfileTwo:hover,
+.gainProfile:hover .gainProfileInfo {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.gainProfileTitle {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.gainProfileInfo {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #5c5c77;
+}
+
+.profileOneInfo,
+.profileTitleOne {
+  color: #fff;
+}
+
+.gainRightCon img {
+  width: 100%;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 1600px) {
+  .gainContainer {
+    justify-content: space-between;
+  }
+
+  .gainTitle {
+    font-size: 42px;
+    line-height: 55px;
+    max-width: 90%;
+  }
+
+  .gainProfile {
+    padding: 24px 34px;
+    max-width: 86%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .gainTitle {
+    font-size: 32px;
+    max-width: 100%;
+  }
+
+  .gainProfile {
+    max-width: 88%;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .gainContainer {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .gainTitle {
+    font-size: 28px;
+  }
+
+  .gainLeftCon {
+    max-width: 85%;
+  }
+
+  .gainProfile {
+    max-width: 100%;
+    padding: 24px 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gainLeftCon {
+    max-width: 100%;
+  }
+
+  .gainPara {
+    display: none;
+  }
+
+  .gainTitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gainProfile {
+    padding: 24px;
+  }
+}

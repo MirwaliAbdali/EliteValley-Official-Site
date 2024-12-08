@@ -1,0 +1,179 @@
+.sectionThree {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.sectionThreeImgs {
+    display: flex;
+    gap: 34px;
+    justify-content: space-between;
+}
+
+.sectionThreeImgOneCon,
+.sectionThreeImgTwoCon {
+    max-width: 100%;
+}
+
+.sectionThreeImgOne,
+.sectionThreeImgTwo {
+    height: 100%;
+}
+
+.disNone {
+    display: none;
+}
+
+.sectionThreeInfo {
+    background-color: #fad8ca;
+    padding: 56px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.sectionThreeParaOne {
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -0.01em;
+    color: #0d0c22;
+    margin-bottom: 34px;
+    max-width: 80%;
+}
+
+.sectionThreeParaTwo {
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #333;
+    max-width: 80%;
+    margin-bottom: 44px;
+}
+
+.sectionThreeRight {
+    border-radius: 15px;
+    background-color: #ffe7bb;
+    margin-left: 34px;
+}
+
+.cartonGirl {
+    margin-top: -50px;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 1760px) {
+    .sectionThreeImgOneCon,
+    .sectionThreeImgTwoCon {
+        height: 220px;
+    }
+
+    .sectionThreeParaOne {
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 80.19px;
+        letter-spacing: -0.02em;
+        max-width: 534px;
+    }
+
+    .sectionThreeParaTwo {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.06px;
+        max-width: 476px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .sectionThreeInfo {
+        padding: 54px;
+    }
+
+    .sectionThreeParaOne {
+        max-width: 100%;
+        font-size: 44px;
+    }
+
+    .sectionThree {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .cartonGirl,
+    .sectionThreeImgs {
+        display: none;
+    }
+
+    .disNone {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .sectionThreeInfo {
+        background-color: transparent;
+        padding: 0;
+        text-align: center;
+    }
+    .sectionThreeParaOne,
+    .sectionThreeParaTwo {
+        max-width: 100%;
+    }
+
+    .sectionThreeParaTwo {
+        font-size: 18px;
+        padding: 0 55px 0 55px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+}
+
+@media screen and (max-width: 1140px) {
+}
+
+@media screen and (max-width: 950px) {
+    .sectionThree {
+        margin-bottom: 0;
+    }
+    .sectionThreeParaOne {
+        font-size: 36px;
+    }
+
+    .sectionSixParaOne {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .sectionThreeInfo {
+        max-width: 100%;
+    }
+
+    .sectionThreeParaOne {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .sectionThreeParaTwo {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sectionThreeParaOne {
+        font-size: 24px;
+        margin-bottom: 18px;
+        line-height: 30.07px;
+    }
+
+    .disNone {
+        line-height: 30.07px;
+        margin-bottom: 16px;
+    }
+
+    .sectionThreeParaTwo {
+        padding: 0 18px;
+        margin-bottom: 78px;
+    }
+}

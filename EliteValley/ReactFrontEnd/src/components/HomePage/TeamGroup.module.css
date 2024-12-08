@@ -1,0 +1,183 @@
+.sectionSix {
+    margin-bottom: 100px;
+}
+
+.sectionSixTop {
+    display: flex;
+    margin-bottom: 54px;
+}
+
+.sectionSixParaOne {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    max-width: 86%;
+    font-weight: bold;
+}
+
+.sectionSixParaTwo {
+    max-width: 70%;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+.sectionSixBtm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+}
+
+.group182Img {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.groupTitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.groupInfo {
+    color: #5c5c77;
+    max-width: 74%;
+    margin-bottom: 25px;
+}
+
+.groupHidden1 {
+    display: none;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 1760px) {
+    .sectionSixParaTwo {
+        max-width: 100%;
+    }
+    .groupTitle {
+        font-size: 32px;
+    }
+
+    .groupInfo {
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .sectionSixTop {
+        gap: 34px;
+    }
+    .sectionSixParaOne {
+        font-size: 32px;
+    }
+    .sectionSixParaOne,
+    .sectionSixParaTwo {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+}
+
+@media screen and (max-width: 1250px) {
+    .sectionSixTop {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 74px;
+    }
+
+    .sectionSixParaOne {
+        font-size: 60px;
+        line-height: 1.2;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .sectionSixParaTwo {
+        max-width: 100%;
+        padding: 0 82px 0 82px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .sectionSixBtm {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .groupHidden1 {
+        display: block;
+    }
+
+    .groupHidden2 {
+        display: none;
+    }
+
+    .group182Img {
+        width: 100%;
+    }
+
+    .groupTitle {
+        font-size: 44px;
+    }
+
+    .groupInfo {
+        font-size: 20px;
+        padding: 0 94px;
+    }
+
+    .groupTitle,
+    .groupInfo {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .sectionSixParaOne {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+}
+
+@media screen and (max-width: 450px) {
+    .sectionSix {
+        margin-bottom: 44px;
+    }
+
+    .sectionSixTop {
+        gap: 22px;
+        margin-bottom: 40px;
+    }
+    .sectionSixParaOne {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .sectionSixParaTwo {
+        color: #5c5c77;
+        padding: 0 40px;
+    }
+
+    .group182Img {
+        margin-bottom: 8px;
+    }
+
+    .groupTitle {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .groupInfo {
+        font-size: 16px;
+        padding: 0 48px;
+        margin-bottom: 32px;
+    }
+}

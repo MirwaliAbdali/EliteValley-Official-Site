@@ -1,0 +1,151 @@
+.sectionFour {
+    margin-bottom: 100px;
+}
+
+.sectionFourTop {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 88px;
+}
+
+.sctFourParaRight {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.sctFourParaRight span {
+    color: #ff6838;
+}
+
+.sctFourParaLeft {
+    max-width: 45%;
+    color: #5c5c77;
+}
+
+.sectionFourBtm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    gap: 66px;
+    margin-bottom: 35px;
+}
+
+.fieldNum {
+    font-weight: bold;
+    color: #1a8dff;
+    margin: 15px 0 12px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.fieldTitle {
+    margin-bottom: 10px;
+}
+
+.fieldContent {
+    width: 350px;
+    color: #5c5c77;
+}
+
+.sctFourBtmRight {
+    /* Add any necessary styles */
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1350px) {
+}
+
+@media screen and (max-width: 1250px) {
+    .sectionFour {
+        margin: 0;
+    }
+
+    .sectionFourTop {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sectionFourBtm {
+        justify-content: center;
+        text-align: center;
+    }
+    .sctFourBtmRight {
+        display: none;
+    }
+
+    .field {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 74px;
+    }
+
+    .fieldImg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .fieldNum {
+        font-size: 22px;
+    }
+
+    .fieldTitle {
+        font-size: 35px;
+        margin-bottom: 24px;
+    }
+
+    .fieldContent {
+        font-size: 22px;
+        width: 80%;
+        margin-left: 78px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 730px) {
+    .sctFourParaLeft {
+        max-width: 68%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .field {
+        margin-bottom: 54px;
+    }
+
+    .fieldImg {
+        margin-bottom: 0;
+    }
+
+    .fieldNum,
+    .fieldContent {
+        font-size: 16px;
+    }
+    .fieldNum {
+        margin: 6px 0;
+    }
+
+    .fieldTitle {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .fieldContent {
+        margin-left: 40px;
+    }
+
+    .sctFourParaRight {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,243 @@
+.sectionTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.para {
+    font-size: 36px;
+    margin-bottom: 18px;
+    max-width: 66%;
+}
+
+.graph {
+    margin-bottom: 35px;
+}
+
+.descrp {
+    max-width: 40%;
+    margin-bottom: 42px;
+    color: #5c5c77;
+}
+
+.getInTouch {
+    position: relative;
+}
+
+.whatsappBtn {
+    width: 185px;
+    height: 38px;
+    font-family: "Source Serif 4", serif;
+    border-style: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 32px 8px 8px;
+    background-color: #34c065;
+    border-radius: 50px;
+    margin-bottom: 64px;
+    cursor: pointer;
+    transition: background 0.6s ease;
+}
+
+.whatsappBtn:hover {
+    background-color: #5ce08a;
+}
+
+.whatsappBtn:active {
+    background-color: #34c065;
+}
+
+.whatsappIcon {
+    width: 22px;
+    position: absolute;
+    right: 32px;
+    top: 0px;
+}
+
+.sectionTwoChildTwo {
+    display: flex;
+}
+
+.profileImgOne,
+.profileImgTwo {
+    margin-bottom: 24px;
+}
+
+.paraOne {
+    font-size: 24px;
+    max-width: 44%;
+    font-weight: bold;
+    line-height: 30.07px;
+}
+
+.profile {
+    max-width: 50%;
+}
+
+.paraOneContent {
+    margin-top: 24px;
+    max-width: 46%;
+    color: #5c5c77;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 1760px) {
+    /* Section two */
+    .para {
+        font-size: 48px;
+    }
+
+    .paraOne {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    /* Section two */
+    .para,
+    .descrp {
+        max-width: 86%;
+    }
+
+    .paraOne,
+    .paraOneContent {
+        max-width: 66%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    /* SECTION 2 */
+    .para {
+        max-width: 100%;
+    }
+    .descrp {
+        max-width: 68%;
+    }
+
+    .paraOne {
+        max-width: 62%;
+    }
+
+    .paraOneContent {
+        max-width: 74%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .raboticHuman {
+        display: none;
+    }
+
+    .sectionTwoChildOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .para {
+        font-size: 60px;
+        text-align: center;
+    }
+    .descrp {
+        text-align: center;
+    }
+
+    .sectionTwoChildTwo {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .profile {
+        max-width: 30%;
+    }
+
+    .whatsappIcon {
+        width: 20px;
+        right: 40px;
+        top: 8px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .para {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .para {
+        font-size: 40px;
+    }
+
+    .profile {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .sectionTwo {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .sectionTwoChildOne {
+        width: 100%;
+    }
+
+    .para {
+        font-size: 44px;
+        margin-bottom: 14px;
+    }
+
+    .sectionTwoChildTwo {
+        flex-direction: column;
+        gap: 44px;
+        align-items: center;
+    }
+
+    .profileImgOne,
+    .profileImgTwo {
+        width: 100px;
+    }
+
+    .paraOne {
+        font-size: 24px;
+        max-width: 100%;
+    }
+    .paraOneContent {
+        max-width: 100%;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .profile {
+        max-width: 80%;
+    }
+
+    .para {
+        font-size: 24px;
+    }
+
+    .paraOne {
+        font-size: 16px;
+    }
+
+    .descrp {
+        max-width: 84%;
+        margin-bottom: 16px;
+    }
+
+    .whatsappIcon {
+        right: 36px;
+        top: 8px;
+    }
+
+    .profileImgOne,
+    .profileImgTwo {
+        width: 74px;
+    }
+}

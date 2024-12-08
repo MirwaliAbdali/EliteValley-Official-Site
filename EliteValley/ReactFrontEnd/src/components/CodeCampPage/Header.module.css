@@ -1,0 +1,236 @@
+.nav {
+    width: 100%;
+    padding: 0 8rem;
+}
+
+.logo {
+    width: 150px;
+}
+
+.firstContainer {
+    position: relative;
+    margin-bottom: 100px;
+    font-family: "Source Serif Pro";
+}
+
+.startJourneyCon {
+    background: #fff0ec;
+    width: 30%;
+    padding: 34px;
+    border-radius: 8px;
+    position: absolute;
+    top: 250px;
+    left: 90px;
+    z-index: 90;
+}
+
+.occupancyCon,
+.durationCon {
+    margin-bottom: 22px;
+    padding: 12px;
+}
+
+.occupancy,
+.duration,
+.upcoming,
+.next {
+    color: #5c5c77;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.chaptersCon {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+}
+
+.upcomingCon,
+.occupancyCon,
+.durationCon,
+.nextChapterCon {
+    border: 1px solid #5c5c77;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.upcomingCon,
+.nextChapterCon {
+    padding: 8px 24px;
+    margin-bottom: 24px;
+}
+
+.journeyBtn {
+    width: 100%;
+}
+
+.welcomeCon {
+    max-width: 30%;
+    position: absolute;
+    top: 160px;
+    right: 250px;
+}
+
+.welcomePara {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.welcomePara::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1.5px;
+    background-color: #071920;
+    margin: 0 10px 3px 0;
+}
+
+.welcomeCon h1 {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 80px;
+    margin-bottom: 18px;
+}
+
+.prizeCon {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.prizeInfo {
+    color: #5c5c77;
+}
+
+.houseImgCon {
+    margin-top: 300px;
+}
+
+.houseImg {
+    width: 36%;
+}
+
+.headerBtmCon {
+    max-width: 100%;
+    background: #ffd8b4;
+    position: absolute;
+    right: 0;
+    left: 160px;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px;
+    padding-right: 200px;
+}
+
+.headerBtmParaOne {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.headerBtmParaTwo::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1.5px;
+    background-color: #071920;
+    margin: 0 10px 3px 0;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 1700px) {
+    .welcomeCon h1 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .welcomeCon {
+        width: 50%;
+        right: 74px;
+    }
+
+    .prizeInfo {
+        max-width: 46%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .welcomeCon {
+        max-width: 40%;
+        right: 15px;
+    }
+
+    .welcomeCon h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .welcomeCon {
+        right: 44px;
+    }
+
+    .welcomeCon h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .make {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 88px;
+    }
+
+    .houseImgCon,
+    .headerBtmCon {
+        display: none;
+    }
+
+    .welcomeCon,
+    .startJourneyCon {
+        position: static;
+    }
+
+    .welcomeCon {
+        max-width: 74%;
+        margin: 35px 0 24px 14px;
+    }
+
+    .startJourneyCon {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .welcomeCon h1 {
+        font-size: 44px;
+        line-height: 64px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .general {
+        margin-bottom: 44px;
+    }
+
+    .make {
+        align-items: flex-start;
+    }
+
+    .startJourneyCon {
+        width: 100%;
+    }
+
+    .welcomeCon h1 {
+        font-size: 48px;
+        line-height: 57px;
+        width: 100%;
+    }
+}

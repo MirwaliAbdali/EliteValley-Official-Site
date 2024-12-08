@@ -1,0 +1,151 @@
+.general {
+    margin-bottom: 100px;
+}
+
+.enrollTitle {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+}
+
+.enrollInfo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 70%;
+    margin-bottom: 35px;
+    color: rgba(92, 92, 119, 1);
+}
+
+.enrollForm {
+    width: 100%;
+    background: #fffbf2;
+    border: 1px solid #5c5c77;
+    border-radius: 24px;
+}
+
+.innerFormCon {
+    padding: 44px 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 34px;
+}
+
+.inptCon {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.inpt {
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #c6c6c6;
+    background: transparent;
+}
+
+.name,
+.email,
+.phoneNum,
+.cv {
+    padding: 18px;
+}
+
+.fileCon {
+    position: relative;
+}
+
+.fileInput {
+    position: absolute;
+    top: 28px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fileInputLabel {
+    padding: 10px 20px;
+    background: transparent;
+    color: #333;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.fileName {
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.textareaCon {
+    grid-column: 3 / -3;
+}
+
+textarea {
+    padding: 14px;
+}
+
+textarea::placeholder {
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+label {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 6px;
+}
+
+.enrollBtn {
+    margin: 0 0 24px 24px;
+    padding: 8px 32px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1000px) {
+    .enrollTitle {
+        font-size: 54px;
+    }
+
+    .enrollInfo {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .enrollTitle {
+        font-size: 38px;
+        line-height: 54px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .enrollTitle {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .enrollInfo {
+        text-align: center;
+        padding: 0 34px;
+    }
+
+    .innerFormCon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .enrollTitle {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+}

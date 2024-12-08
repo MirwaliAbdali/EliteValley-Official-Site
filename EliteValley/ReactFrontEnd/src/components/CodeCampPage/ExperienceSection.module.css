@@ -1,0 +1,274 @@
+.experienceSection {
+    margin-bottom: 100px;
+}
+
+.focusPara {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+.focusPara::before {
+    content: "";
+    width: 30px;
+    height: 1.5px;
+    display: inline-block;
+    background-color: #071920;
+    margin: 0 6px 3px 0;
+}
+
+.experienceTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experienceTop h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+}
+
+.experienceTop p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333;
+    max-width: 35%;
+    margin-bottom: 44px;
+}
+
+.experienceBtm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+
+.experienceRight {
+    display: flex;
+    gap: 24px;
+}
+
+.frontendCon {
+    background: #fad8b0;
+    border-radius: 24px;
+    border-top: 6px solid #ff6838;
+    padding: 42px 0px 42px 24px;
+    max-width: 44%;
+}
+
+.frontendNum {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    color: #0d0c22;
+}
+
+.frontendTitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 24px;
+    color: #0d0c22;
+}
+
+.frontendInfo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.experience {
+    background: #fad8b0;
+    border-radius: 24px;
+    padding: 42px 24px;
+    border-top: 6px solid #ff6838;
+    transition: all 0.5s ease;
+    max-width: 300px; /* Collapsed state */
+    overflow: hidden;
+}
+
+.experience:hover {
+    cursor: pointer;
+}
+
+.experience.expanded {
+    max-width: 100%; /* Expanded state */
+}
+
+.experienceNum {
+    margin-bottom: 24px;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 57px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #0d0c22;
+    transition: font-size 0.3s ease;
+}
+
+.experienceTitle {
+    writing-mode: vertical-lr;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: #0d0c22;
+    transition: writing-mode 0.3s ease, font-size 0.3s ease;
+}
+
+.experienceInfo {
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.experience.expanded .experienceInfo {
+    display: block;
+    margin-top: 10px;
+}
+
+.experience.expanded .experienceNum {
+    font-size: 64px;
+}
+
+.experience.expanded .experienceTitle {
+    writing-mode: horizontal-tb;
+    font-size: 24px;
+}
+
+/* Responsiveness */
+
+@media screen and(min-width: 1600px) {
+    .experienceBtm {
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .experienceRight {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .experienceLeft {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .experienceTop h1 {
+        font-size: 32px;
+    }
+
+    .experienceTop p {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .focusPara {
+        display: none;
+    }
+
+    .frontendCon {
+        max-width: 100%;
+    }
+
+    .experienceTop {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .experienceTop h1 {
+        margin-bottom: 16px;
+    }
+
+    .experienceTop p {
+        max-width: 100%;
+    }
+
+    .experienceRight {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experienceBtm {
+        display: block;
+    }
+
+    .frontendCon {
+        grid-column: 1 /-1;
+        padding: 20px 0px 40px 40px;
+    }
+
+    .frontendNum {
+        font-size: 74px;
+        text-align: center;
+    }
+
+    .frontendTitle {
+        font-size: 32px;
+    }
+
+    .frontendInfo {
+        max-width: 88%;
+        font-size: 18px;
+        margin-top: 24px;
+        line-height: 34px;
+    }
+
+    .experience h1,
+    h2 {
+        display: inline;
+    }
+
+    .experienceNum {
+        font-size: 52px;
+        margin-right: 10px;
+    }
+
+    .experienceTitle {
+        writing-mode: horizontal-tb;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .experienceRight {
+        grid-template-columns: auto;
+    }
+
+    .frontendCon {
+        padding-left: 68px;
+    }
+
+    .frontendNum,
+    .frontendTitle {
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .experience {
+        padding: 18px 24px 18px 68px;
+    }
+
+    .experienceNum {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .frontendCon,
+    .experience {
+        padding: 24px;
+    }
+}
